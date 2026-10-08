@@ -4,7 +4,7 @@ import { AlertCircle, MessageCircle,  Search } from "lucide-react";
 
 export default function Topbar      () {
     return(
-        <div className="bg-[#F5F8FC] shadow px-4 py-5 w-full flex items-center justify-between">
+        <div className="bg-[#F5F8FC]  px-8 py-5 w-full flex items-center justify-between">
             <div className="flex items-center gap-2 px-4 py-3 bg-[#766ad0]/10 rounded-lg w-100">
              
                 <input type="text" placeholder="Search anything..." className="bg-transparent flex-1 border-none focus:outline-none" />
