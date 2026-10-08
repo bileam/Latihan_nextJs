@@ -2,24 +2,27 @@ import { Calendar } from "lucide-react";
 
 export default function DashboardPage() {
   return (
-    <div>
-          {/* pertam */}
-     <div className="flex justify-between w-full items-center  gap-4">
-        <div className="flex flex-col gap-2 ">
-            <h2 className="text-4xl font-semibold">hallo, Admin </h2>
-            <span className="text-gray-500 text-sm">
-                welcome to the dashboard page, Here what happening with your store today
-            </span>
-        </div>
-        <div className="flex gap-2 items-center bg-blue-500/10 py-2 px-4 rounded-2xl "> 
-            <Calendar className="text-blue-800"/>
-            <span className="text-sm font-medium text-gray-500">monday, 6 october 2026</span>
-        </div>
-     </div>
-{/* kedua */}
-     <div></div>
-     {/* kedua */}
-     <div></div>
+    <div className="flex flex-col gap-4">
+        <h1 className=" text-3xl text-gray-500 font-normal">Kategori</h1>
+      <div className="grid grid-cols-3 gap-6 font-normal">  <div className="bg-[#5443c3] rounded-2xl text-gray-300 text-[20px] font-normal h-50 overflow-hidden relative px-6 py-4">
+      <p className="relative z-20">produk</p>
+      <div className="absolute h-50 w-50 -bottom-6 -left-10 rounded-full bg-[#766ad0]/15"></div>
+      <div className="absolute h-50 w-50 -bottom-15 left-10 rounded-full bg-[#766ad0]/20"></div>
+      </div>
+      <div className="bg-[#5443c3] rounded-2xl text-gray-300 text-[20px] font-normal h-50 overflow-hidden relative px-6 py-4">
+      <p className="relative z-20">produk</p>
+      <div className="absolute h-50 w-50 -top-15 left-30 rounded-full bg-[#766ad0]/15"></div>
+      <div className="absolute h-50 w-50 -top-10 left-60 rounded-full bg-[#766ad0]/20"></div>
+      </div>
+      <div className="bg-[#5443c3] rounded-2xl text-gray-300 text-[20px] font-normal h-50 overflow-hidden relative px-6 py-4">
+      <p className="relative z-20">produk</p>
+      <div className="absolute h-50 w-50 -bottom-15 right-0 rounded-full bg-[#766ad0]/15"></div>
+      <div className="absolute h-50 w-50 -bottom-15 right-20 rounded-full bg-[#766ad0]/20"></div>
+      </div>
+  </div>
+    
+    
+     
     </div>
   );
 }

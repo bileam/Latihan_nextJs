@@ -4,7 +4,7 @@ import Topbar from "@/components/UI/topbar";
 export default function DashboardLayout({children}:{children:React.ReactNode}){
     return(
         <div  className="bg-[#F5F8FC] flex text-black h-screen w-full overflow-hidden">
-            <aside>
+            <aside className="">
              <Sidebar/>
             </aside>
             <div className="flex flex-col gap-4 w-full">
