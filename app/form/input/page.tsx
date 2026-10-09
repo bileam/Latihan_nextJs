@@ -1,9 +1,13 @@
 "use client"
 
 import { createProductSchema } from "@/schemas/product.schema"
+import { useRouter } from "next/navigation"
+
 import { success } from "zod"
 
+
 export default function AddData(){
+const router = useRouter()
     const handleSubmit=(e:React.FormEvent<HTMLFormElement>)=>{
         e.preventDefault()
         const formData = new FormData(e.currentTarget)
@@ -22,6 +26,8 @@ export default function AddData(){
     return
  }
  console.log("data berhasil di tambahkan ",result.data)
+//  window.location.href = "/form"
+router.push("/dashboard")
     }
     return(
         <div className="bg-white h-screen text-black flex flex-col items-center justify-center rounded-lg">

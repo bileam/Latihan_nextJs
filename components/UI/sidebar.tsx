@@ -1,5 +1,5 @@
 "use client"
-import { FileChartColumnIncreasingIcon,   GroupIcon,  Home, LineSquiggleIcon,  Square } from "lucide-react";
+import { ChartBar, ChartNoAxesGantt, FileChartColumnIncreasingIcon,   GroupIcon,  Home, LineSquiggleIcon,  Plane,  PlaneIcon,  RepeatIcon,  Square } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -17,10 +17,11 @@ return(
              
         </div>
         <div className="flex flex-col gap-4 text-[#E8F0FF] mt-6 mb-2 ">
-       
                   <Link href="/dashboard" className={`flex gap-12 ${pathname==="/dashboard"?"bg-[#766ad0] rounded-lg text-white ":"text-gray-300 hover:bg-[#766ad0]"} items-center px-4 py-4 rounded-lg transition-colors duration-200 `}><Home /> <span>Dashboard</span></Link>
-              <Link href="/dashboard/product" className={`flex gap-12 ${pathname==="/dashboard/product"?"bg-[#766ad0] rounded-lg text-white ":"text-gray-300 hover:bg-[#766ad0]"} items-center px-4 py-4 rounded-lg transition-colors duration-200 `}>  <Square />  <span>Product</span></Link>
-               <Link href="/dashboard/categories" className={`flex gap-12 ${pathname==="/dashboard/categories"?"bg-[#766ad0] rounded-lg text-white ":"text-gray-300 hover:bg-[#766ad0]"} items-center px-4 py-4 rounded-lg transition-colors duration-200 `}> <GroupIcon />  <span>Categories</span></Link>
+              <Link href="/dashboard/product" className={`flex gap-12 ${pathname==="/dashboard/product"?"bg-[#766ad0] rounded-lg text-white ":"text-gray-300 hover:bg-[#766ad0]"} items-center px-4 py-4 rounded-lg transition-colors duration-200 `}>  <ChartNoAxesGantt />  <span>Transaction</span></Link>
+               <Link href="/dashboard/categories" className={`flex gap-12 ${pathname==="/dashboard/categories"?"bg-[#766ad0] rounded-lg text-white ":"text-gray-300 hover:bg-[#766ad0]"} items-center px-4 py-4 rounded-lg transition-colors duration-200 `}> <RepeatIcon />    <span>Categories</span></Link>
+               <Link href="/dashboard/report" className={`flex gap-12 ${pathname==="/dashboard/report"?"bg-[#766ad0] rounded-lg text-white ":"text-gray-300 hover:bg-[#766ad0]"} items-center px-4 py-4 rounded-lg transition-colors duration-200 `}><ChartBar /> <span>Report</span></Link>
+               <Link href="/dashboard/Plan" className={`flex gap-12 ${pathname==="/dashboard/Plan"?"bg-[#766ad0] rounded-lg text-white ":"text-gray-300 hover:bg-[#766ad0]"} items-center px-4 py-4 rounded-lg transition-colors duration-200 `}> <Plane />  <span>Plan</span></Link>
         </div>
         </div>
 

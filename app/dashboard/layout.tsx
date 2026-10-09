@@ -3,7 +3,7 @@ import Topbar from "@/components/UI/topbar";
 
 export default function DashboardLayout({children}:{children:React.ReactNode}){
     return(
-        <div  className="bg-[#F5F8FC] flex text-black h-screen w-full overflow-hidden">
+        <div  className="bg-[#F5F8FC] flex text-black h-screen w-full overflow-hidden ">
             <aside className="">
              <Sidebar/>
             </aside>
@@ -11,7 +11,7 @@ export default function DashboardLayout({children}:{children:React.ReactNode}){
                 <nav className="w-full ">
                     <Topbar/>
                 </nav>
-                 <main className="px-10 py-4">
+                 <main className="px-10 py-4 overflow-y-auto">
                       {children}
                  </main>
             </div>  
